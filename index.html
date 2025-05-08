@@ -6,52 +6,76 @@
         <title>Combined Header</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-gray-100">
-        <header class="bg-white shadow-md py-4 px-6">
+    <body>
+        <!-- Transparent & Absolute Header -->
+        <header class="absolute top-0 left-0 w-full z-50 bg-white px-6 py-4">
             <div class="w-full mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
                 <!-- Left: Main Logo and Accreditation Logos -->
                 <div class="flex flex-col sm:flex-row items-center gap-4">
-                    <!-- Main Logo (Dummy) -->
                     <img src="/image/accurate-logo.png" alt="Main Logo" class="h-12 object-contain cursor-pointer" />
-
-                    <!-- Accreditation Logos Grid (Dummies) -->
-                    <div class="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-4">
-                        <img src="/image/oppo-india.webp" alt="NAAC Logo" class="h-10 object-contain shadow-md" />
-                        <img src="/image//suwasthi-intense-healthcare-logo.webp" alt="NBA Logo" class="h-10 object-contain shadow-md" />
-                        <img src="/image/urs-tech-logo.webp" alt="QS-I-GAUGE Logo" class="h-10 object-contain shadow-md" />
-                        <img src="/image/wipro4247.logowik.com.webp" alt="IIC Logo" class="h-10 object-contain shadow-md" />
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                        <img src="/image/aicte-logo.jpeg" alt="NAAC Logo" class="w-16 object-contain shadow-md" />
+                        <img src="/image/ccsu-logo.jpeg" alt="NBA Logo" class="w-16 object-contain shadow-md" />
+                        <img src="/image/naac-logo.png" alt="QS-I-GAUGE Logo" class="w-16 object-contain shadow-md" />
+                        <img src="/image/naac-logo.png" alt="IIC Logo" class="w-16 object-contain shadow-md" />
                     </div>
                 </div>
 
                 <!-- Right: Contact Info -->
-                <div class="flex text-center space-x-2">
-                    <p class="text-gray-700 font-medium"><strong>Phone:</strong> +91 9560148370</p>
-                    <p class="text-gray-700 font-medium"><strong>Email:</strong> admissions@accurate.in</p>
+                <div class="flex flex-col sm:flex-row text-center space-x-0 sm:space-x-4 font-medium">
+                    <p><strong>Phone:</strong> +91 9560148370</p>
+                    <p><strong>Email:</strong> admissions@accurate.in</p>
                 </div>
             </div>
         </header>
 
         <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-blue-900 to-indigo-700 text-white py-20">
-            <div class="max-w-[1500px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 h-screen">
-                <!-- Text Content -->
-                <div class="md:w-8/12 text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+        <section class="relative text-white pt-32 pb-20 overflow-hidden">
+            <!-- 🔹 Background Video -->
+            <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-2]">
+                <source src="/video/GIMS_Video.mp4" type="video/webm" />
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- 🔹 Blue Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-transparent z-[-1]"></div>
+
+            <div class="max-w-[1500px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 min-h-[calc(100vh-8rem)]">
+                <!-- 🔹 Text Content -->
+                <div class="md:w-8/12 text-center md:text-left space-y-6">
+                    <h3 class="text-2xl md:text-3xl font-semibold text-yellow-300">Accurate Group of Institutions</h3>
+                    <h3 class="text-4xl md:text-5xl font-bold leading-tight">
                         BCA in Data Science
-                    </h1>
-                    <p class="text-lg md:text-xl mb-6">
-                        Empower Your Data-Driven Future with AI, Machine Learning, and Big Data.
-                    </p>
-                    <p class="text-sm mb-6">
-                        NAAC Accredited | AICTE Approved | 100% Placement Assistance
-                    </p>
-                    <a href="https://admissions.accurate.in" target="_blank" class="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-lg hover:bg-yellow-300 transition">
+                    </h3>
+
+                    <div class="max-w-3xl space-y-6">
+                        <p class="text-lg max-sm:text-sm max-md:text-base">
+                            Step into the future with a cutting-edge BCA program focused on AI, Machine Learning, and Big Data. Gain the skills top tech companies demand — from predictive analytics to data visualization — all in one course.
+                        </p>
+    
+                        <p class="text-lg max-sm:text-sm max-md:text-base">
+                            Designed by industry experts and taught by seasoned faculty from IITs and NITs, our curriculum blends theory with hands-on experience. Students work on real-time projects, participate in hackathons, and earn globally
+                            recognized certifications that give them a competitive edge.
+                        </p>
+    
+                        <p class="text-sm">
+                            NAAC Accredited | AICTE Approved | Industry-Aligned Curriculum | 100% Placement Assistance
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6 text-sm">
+                        <div class="bg-blue-800 bg-opacity-60 p-4 rounded shadow">👨‍🏫 Learn from IIT/NIT Faculty</div>
+                        <div class="bg-blue-800 bg-opacity-60 p-4 rounded shadow">🧪 Live Projects & Labs</div>
+                        <div class="bg-blue-800 bg-opacity-60 p-4 rounded shadow">🎓 Global Certifications</div>
+                    </div>
+
+                    <a href="https://admissions.accurate.in" target="_blank" class="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 mt-6 rounded-lg hover:bg-yellow-300 transition">
                         Apply Now – 2025 Batch
                     </a>
                 </div>
 
-                <!-- Form Section -->
-                <div class="md:w-4/12 w-full bg-white text-black rounded-lg p-8 shadow-lg">
+                <!-- 🔹 Form Section -->
+                <div class="md:w-4/12 w-full bg-white text-black rounded-lg p-8 shadow-xl z-10">
                     <h2 class="text-2xl font-semibold mb-6 text-center">Apply Now</h2>
                     <form action="#" method="POST" class="space-y-4">
                         <div>
@@ -71,9 +95,6 @@
                             <select id="course" name="course" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
                                 <option value="">-- Select Course --</option>
                                 <option value="bca-ds">BCA in Data Science</option>
-                                <option value="bba">BBA</option>
-                                <option value="mba">MBA</option>
-                                <!-- Add more options as needed -->
                             </select>
                         </div>
                         <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded-lg transition">
