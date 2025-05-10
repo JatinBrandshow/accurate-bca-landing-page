@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Combined Header</title>
+        <title>Accurate | BCA - Data Science</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     </head>
     <body>
         <!-- Transparent & Absolute Header -->
@@ -33,31 +34,31 @@
         <section class="relative text-white pt-32 pb-20 overflow-hidden">
             <!-- 🔹 Background Video -->
             <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-2]">
-                <source src="/video/GIMS_Video.mp4" type="video/webm" />
+                <source src="/video/accurate-video.mp4" type="video/webm" />
                 Your browser does not support the video tag.
             </video>
 
             <!-- 🔹 Blue Gradient Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-transparent z-[-1]"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent z-[-1]"></div>
 
             <div class="max-w-[1500px] mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 min-h-[calc(100vh-8rem)]">
                 <!-- 🔹 Text Content -->
-                <div class="md:w-8/12 text-center md:text-left space-y-6">
-                    <h3 class="text-2xl md:text-3xl font-semibold text-yellow-300">Accurate Group of Institutions</h3>
-                    <h3 class="text-4xl md:text-5xl font-bold leading-tight">
-                        BCA in Data Science
-                    </h3>
+                <div class="md:w-8/12 text-center md:text-left space-y-6 animate-left">
+                    <h3 class="text-5xl font-semibold text-yellow-300 max-lg:text-4xl max-md:text-3xl max-sm:text-2xl">Accurate Group of Institutions</h3>
 
                     <div class="max-w-3xl space-y-6">
+                        <h3 class="text-3xl font-bold leading-tight">
+                            BCA in Data Science
+                        </h3>
                         <p class="text-lg max-sm:text-sm max-md:text-base">
                             Step into the future with a cutting-edge BCA program focused on AI, Machine Learning, and Big Data. Gain the skills top tech companies demand — from predictive analytics to data visualization — all in one course.
                         </p>
-    
+
                         <p class="text-lg max-sm:text-sm max-md:text-base">
-                            Designed by industry experts and taught by seasoned faculty from IITs and NITs, our curriculum blends theory with hands-on experience. Students work on real-time projects, participate in hackathons, and earn globally
-                            recognized certifications that give them a competitive edge.
+                            Designed by industry experts and taught by seasoned faculty from IITs and NITs, our curriculum blends theory with hands-on experience. Students work on real-time projects, participate in hackathons, and earn
+                            globally recognized certifications that give them a competitive edge.
                         </p>
-    
+
                         <p class="text-sm">
                             NAAC Accredited | AICTE Approved | Industry-Aligned Curriculum | 100% Placement Assistance
                         </p>
@@ -75,7 +76,7 @@
                 </div>
 
                 <!-- 🔹 Form Section -->
-                <div class="md:w-4/12 w-full bg-white text-black rounded-lg p-8 shadow-xl z-10">
+                <div class="md:w-4/12 w-full bg-white text-black rounded-lg p-8 shadow-xl z-10 animate-right">
                     <h2 class="text-2xl font-semibold mb-6 text-center">Apply Now</h2>
                     <form action="#" method="POST" class="space-y-4">
                         <div>
@@ -104,5 +105,49 @@
                 </div>
             </div>
         </section>
+
+        <!-- About the Program -->
+        <section class="relative bg-white py-24 px-6 sm:px-12 lg:px-24 overflow-hidden" style="background-image: url('image/accurate-infra.jpeg'); background-size: cover; background-position: center;">
+            <!-- Full background contrast overlay -->
+            <div class="absolute inset-0 bg-transparent backdrop-blur-sm z-0"></div>
+
+            <!-- Left-side Accurate color gradient only -->
+            <div class="absolute inset-y-0 left-0 w-1/2 bg-gradient-to-r from-indigo-950 to-transparent z-0"></div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16 relative z-10">
+                <!-- Text Content -->
+                <div class="space-y-6 text-white">
+                    <h2 class="text-4xl font-extrabold">
+                        About the Program
+                    </h2>
+                    <p class="text-lg leading-relaxed">
+                        Accurate Business School’s <span class="font-semibold">BCA in Data Science</span> is a future-ready undergraduate program combining core computing education with real-world data skills. Learn
+                        <span class="font-medium">AI, Machine Learning, Big Data</span>, and <span class="font-medium">Cloud Computing</span> to shape your career in tech.
+                    </p>
+                </div>
+
+                <!-- Optional empty right column -->
+                <div class="hidden lg:block"></div>
+            </div>
+        </section>
+
+        <!-- GSAP Animation Hero Section -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                gsap.from(".animate-left", {
+                    x: -300,
+                    opacity: 0,
+                    duration: 1.54,
+                    ease: "power3.out",
+                });
+
+                gsap.from(".animate-right", {
+                    x: 300,
+                    opacity: 0,
+                    duration: 1.54,
+                    ease: "power3.out",
+                });
+            });
+        </script>
     </body>
 </html>
