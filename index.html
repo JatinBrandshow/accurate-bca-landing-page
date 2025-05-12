@@ -8,8 +8,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!-- Load Lucide icons -->
         <script src="https://unpkg.com/lucide@latest"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@9.1.1/swiper-bundle.min.css" />
     </head>
     <body>
         <!-- Transparent & Absolute Header -->
@@ -437,99 +437,17 @@
         </section>
 
         <!-- Recruiting Partners -->
-        <section class="max-w-4xl mx-auto my-16 overflow-hidden">
-            <div class="">
-                <div class="relative flex space-x-8">
-                    <!-- First Logo (Left to Right) -->
-                    <div class="logo flex items-center space-x-4 animate-left-right">
-                        <!-- Loop through 10 logos -->
-                        <div class="flex items-center space-x-4">
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 1" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 2" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 3" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 4" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 5" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 6" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 7" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 8" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 9" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 10" class="w-16 h-16 object-contain" />
-                        </div>
-                    </div>
+        <section class="py-10">
+            <div class="max-w-[1700px] mx-auto bg-white py-10 px-16 sm:py-7 sm:px-8 md:py-5 md:px-6 sm:px-3 sm:py-3">
+                <h1 class="font-FONT2 text-4xl flex items-center justify-center gap-2 sm:text-3xl md:text-2xl sm:text-xl">
+                    <svg class="w-6 h-6 sm:h-8 sm:w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 2L12 8L18 2M12 12L6 18L18 18L12 12Z" />
+                    </svg>
+                    Recruiting Partners of Accurate
+                </h1>
 
-                    <!-- Second Logo (Right to Left) -->
-                    <div class="logo flex items-center space-x-4 animate-right-left">
-                        <!-- Loop through 10 logos -->
-                        <div class="flex items-center space-x-4">
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 1" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 2" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 3" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 4" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 5" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 6" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 7" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 8" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 9" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 10" class="w-16 h-16 object-contain" />
-                        </div>
-                    </div>
-
-                    <!-- Third Logo (Left to Right) -->
-                    <div class="logo flex items-center space-x-4 animate-left-right">
-                        <!-- Loop through 10 logos -->
-                        <div class="flex items-center space-x-4">
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 1" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 2" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 3" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 4" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 5" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 6" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 7" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 8" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 9" class="w-16 h-16 object-contain" />
-                            <img src="https://via.placeholder.com/50" alt="Company Logo 10" class="w-16 h-16 object-contain" />
-                        </div>
-                    </div>
-                </div>
+                <div id="swiperWrapperContainer" class="py-10 md:py-6 sm:py-4 space-y-10 sm:space-y-6"></div>
             </div>
-
-            <style>
-                /* Custom Animation for Left to Right */
-                .animate-left-right {
-                    animation: move-left-right 10s linear infinite;
-                }
-
-                /* Custom Animation for Right to Left */
-                .animate-right-left {
-                    animation: move-right-left 10s linear infinite;
-                }
-
-                /* Keyframes for Left to Right */
-                @keyframes move-left-right {
-                    0% {
-                        transform: translateX(-100%);
-                    }
-                    50% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(100%);
-                    }
-                }
-
-                /* Keyframes for Right to Left */
-                @keyframes move-right-left {
-                    0% {
-                        transform: translateX(100%);
-                    }
-                    50% {
-                        transform: translateX(0);
-                    }
-                    100% {
-                        transform: translateX(-100%);
-                    }
-                }
-            </style>
         </section>
 
         <!-- GSAP Animation Hero Section -->
@@ -548,6 +466,121 @@
         </script>
         <script>
             lucide.createIcons();
+        </script>
+
+        <!-- Swiper + Logos Script -->
+        <script src="https://unpkg.com/swiper@9.1.1/swiper-bundle.min.js"></script>
+        <script>
+            const collaborationsLogo = [
+                { alt: "COURSERA", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/idfc-first-bank.webp" },
+                { alt: "Archer", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo22.webp" },
+                { alt: "EY", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo23.webp" },
+                { alt: "CNH", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo24.webp" },
+                { alt: "INFOSYS", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo25.webp" },
+                { alt: "ASHOK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo26.webp" },
+                { alt: "ANAND", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo27.webp" },
+                { alt: "YESBANK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo28.webp" },
+                { alt: "PhonePe", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo29.webp" },
+                { alt: "Deloitte", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo30.webp" },
+                { alt: "ACCENTURE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo31.webp" },
+                { alt: "BOB", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo32.webp" },
+                { alt: "UPGRAD", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo33.webp" },
+                { alt: "DECATHLON", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo34.webp" },
+                { alt: "HDB", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo35.webp" },
+                { alt: "HCL", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo36.webp" },
+                { alt: "KPMG", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo37.webp" },
+                { alt: "IBM", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo38.webp" },
+                { alt: "ITC", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo39.webp" },
+                { alt: "DS GROUP", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo40.webp" },
+                { alt: "HITACHI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo41.webp" },
+                { alt: "SPARK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo42.webp" },
+                { alt: "AU", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo43.webp" },
+                { alt: "DELL", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo44.webp" },
+                { alt: "INFOEDGE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo45.webp" },
+                { alt: "PRISM", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo46.webp" },
+                { alt: "SBI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo47.webp" },
+                { alt: "SBIOS", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo48.webp" },
+                { alt: "KANSAI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo49.webp" },
+                { alt: "NAUKRI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo50.webp" },
+                { alt: "LAKSH", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo51.webp" },
+                { alt: "HDFC", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo52.webp" },
+                { alt: "OLN", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo53.webp" },
+                { alt: "PROPERTY", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo54.webp" },
+                { alt: "ANZ", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo55.webp" },
+                { alt: "KPL", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo56.webp" },
+                { alt: "TEAMC", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo57.webp" },
+                { alt: "KOTAK", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo58.webp" },
+                { alt: "SIMP", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo59.webp" },
+                { alt: "LR", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo60.webp" },
+                { alt: "SIMP", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo61.webp" },
+                { alt: "RADISSON", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo62.webp" },
+                { alt: "KENT", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo63.webp" },
+                { alt: "Lifestyle", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo64.webp" },
+                { alt: "AXIS", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo65.webp" },
+                { alt: "BAJAJ", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo66.webp" },
+                { alt: "DTDC", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo67.webp" },
+                { alt: "TECHGO", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo68.webp" },
+                { alt: "EDU", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo69.webp" },
+                { alt: "LR", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo70.webp" },
+                { alt: "AMAZON", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo71.webp" },
+                { alt: "WIPRO", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo72.webp" },
+                { alt: "CROMA", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo73.webp" },
+                { alt: "BLINKIT", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo74.webp" },
+                { alt: "CAFE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo75.webp" },
+                { alt: "BERGE", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo76.webp" },
+                { alt: "DABUR", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo77.webp" },
+                { alt: "INDIAMART", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo78.webp" },
+                { alt: "ICICI", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo79.webp" },
+                { alt: "UJJIVAN", src: "https://csip-image.blr1.digitaloceanspaces.com/csip-image/img/content/logo80.webp" },
+            ];
+
+            // Split logos into 3 equal-ish groups
+            const groupCount = 3;
+            const logosPerGroup = Math.ceil(collaborationsLogo.length / groupCount);
+            const logoGroups = Array.from({ length: groupCount }, (_, i) => collaborationsLogo.slice(i * logosPerGroup, (i + 1) * logosPerGroup));
+
+            const swiperWrapperContainer = document.getElementById("swiperWrapperContainer");
+
+            logoGroups.forEach((group, index) => {
+                const swiperId = `swiper-${index}`;
+                const swiperHtml = `
+                <div class="swiper ${swiperId} overflow-hidden">
+                    <div class="swiper-wrapper flex gap-4">
+                        ${group
+                            .map(
+                                (logo) => `
+                            <div class="swiper-slide flex-shrink-0 w-40 sm:w-32">
+                                <div class="flex justify-center items-center border rounded-md h-20 sm:h-12">
+                                    <img alt="${logo.alt}" src="${logo.src}" class="p-2 h-full w-full object-contain" loading="lazy" />
+                                </div>
+                            </div>
+                        `
+                            )
+                            .join("")}
+                    </div>
+                </div>
+            `;
+                swiperWrapperContainer.insertAdjacentHTML("beforeend", swiperHtml);
+
+                // Initialize swiper after inserting into DOM
+                new Swiper(`.${swiperId}`, {
+                    spaceBetween: 10,
+                    loop: true,
+                    autoplay: {
+                        delay: 0,
+                        disableOnInteraction: false,
+                        reverseDirection: index % 2 !== 0, // alternate direction
+                    },
+                    speed: 2000,
+                    breakpoints: {
+                        320: { slidesPerView: 3 },
+                        480: { slidesPerView: 3 },
+                        768: { slidesPerView: 4 },
+                        1024: { slidesPerView: 5 },
+                        1280: { slidesPerView: 9 },
+                    },
+                });
+            });
         </script>
     </body>
 </html>
