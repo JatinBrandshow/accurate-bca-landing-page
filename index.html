@@ -523,6 +523,100 @@
             </div>
         </section>
 
+        <!-- Placement Section -->
+        <section class="h-screen">
+            <div class="grid grid-cols-1 xl:grid-cols-2 max-sm:px-2">
+            <!-- Left Section -->
+
+            <!-- Right Section (Sliders) -->
+            <div class="flex flex-col justify-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:place-content-start max-sm:gap-2 h-full max-sm:mb-1.5">
+                    <!-- Sliders -->
+                    <div
+                        class="slider"
+                        data-delay="4000"
+                        data-images='["image/placement.jpg","image/placement.jpg"]'
+                    ></div>
+                    <div
+                        class="slider"
+                        data-delay="3000"
+                        data-images='["image/placement.jpg","image/placement.jpg"]'
+                    ></div>
+                    <div
+                        class="slider"
+                        data-delay="3500"
+                        data-images='["image/placement.jpg","image/placement.jpg"]'
+                    ></div>
+                    <div
+                        class="slider"
+                        data-delay="4500"
+                        data-images='["image/placement.jpg","image/placement.jpg"]'
+                    ></div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center p-5 md:p-10 lg:p-16 bg-black bg-opacity-75 bg-center bg-cover bg-blend-multiply" style="background-image: url('/image/accurate-infra.jpeg');">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-light"><span class="font-semibold bg-gradient-to-r from-green-500 to-indigo-400 bg-clip-text text-transparent animate-gradient">Placements</span> Overview</h2>
+                <p class="text-lg md:text-xl lg:text-2xl font-light leading-5 mt-3">Record-Breaking Achievements and Industry-Driven Success</p>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-6">
+                    <!-- Stat Items -->
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl font-thin mt-4">22852</p>
+                        <p class="text-sm md:text-base leading-none mt-2">
+                            Placement <br />
+                            Offers
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl font-thin mt-4">858+</p>
+                        <p class="text-sm md:text-base leading-none mt-2">
+                            Company <br />
+                            Visits
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl font-thin mt-4">20-70 <small class="-ml-1 text-lg">LPA</small></p>
+                        <p class="text-sm md:text-base leading-none mt-2">Package Offered to 150 Students</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl font-thin mt-4">10-20 <small class="-ml-1 text-lg">LPA</small></p>
+                        <p class="text-sm md:text-base leading-none mt-2">Package Offered to 5792 Students</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl font-thin mt-4">5-10 <small class="-ml-1 text-lg">LPA</small></p>
+                        <p class="text-sm md:text-base leading-none mt-2">Package Offered to Approx 7042 Students</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl font-thin mt-4">5 <small class="-ml-1 text-lg">LPA</small></p>
+                        <p class="text-sm md:text-base leading-none mt-2">Package Offered to 9958 Students</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-thin mt-4">23.31 <small class="text-white -ml-1 text-lg">LPA</small></p>
+                        <p class="text-sm md:text-base leading-none mt-2">Highest National Package Offered</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-thin mt-4">70 <small class="text-white -ml-1 text-lg">LPA</small></p>
+                        <p class="text-sm md:text-base leading-none mt-2">Highest International Package Offered</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl md:text-3xl lg:text-5xl text-orange-300 font-thin mt-4">12.5 <small class="text-white -ml-1 text-lg">LPA</small></p>
+                        <p class="text-sm md:text-base leading-none mt-2">
+                            Average Package<br />
+                            Offered
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex justify-start space-x-4 mt-6 max-lg:justify-center">
+                    <button class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white text-sm font-bold px-6 py-2 max-[360px]:text-[11px] rounded-md hover:bg-blue-700 hover:border-b-4 hover:border-yellow-300 transition duration-500">
+                        APPLY TODAY
+                    </button>
+                    <button class="border border-white text-white text-sm font-bold px-4 py-2 max-[360px]:text-[11px] rounded-md hover:bg-white hover:text-black">VIEW PLACEMENTS</button>
+                </div>
+            </div>
+        </div>
+        </section>
+
         <!-- GSAP Animation Hero Section -->
         <script>
             document.addEventListener("DOMContentLoaded", () => {
@@ -840,6 +934,25 @@
         <script type="module">
             import { createIcons, icons } from "https://unpkg.com/lucide@latest/dist/esm/lucide.js";
             createIcons({ icons });
+        </script>
+
+        <!-- Placement Section Script -->
+        <script>
+            document.querySelectorAll(".slider").forEach((slider) => {
+                const images = JSON.parse(slider.getAttribute("data-images"));
+                const delay = parseInt(slider.getAttribute("data-delay"), 10);
+                let index = 0;
+
+                const img = document.createElement("img");
+                img.src = images[index];
+                img.className = "w-full h-600 object-cover rounded-md transition-opacity duration-500";
+                slider.appendChild(img);
+
+                setInterval(() => {
+                    index = (index + 1) % images.length;
+                    img.src = images[index];
+                }, delay);
+            });
         </script>
     </body>
 </html>
